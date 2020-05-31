@@ -64,6 +64,8 @@ jobs:
           source devel/setup.bash
           # echo "::warning $CI_SOURCE_PATH"
           # echo "::warning `ls -l`"
+          cd src
+          ln -s ~/work  # $CI_SOURCE_PATH
           cd ..
           catkin build
       - name: lint
