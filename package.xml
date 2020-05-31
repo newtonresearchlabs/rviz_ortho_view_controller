@@ -11,6 +11,7 @@
 
   <depend>pluginlib</depend>
   <depend>roscpp</depend>
+  <depend>roslint</depend>
   <depend>rviz</depend>
 
   <export>

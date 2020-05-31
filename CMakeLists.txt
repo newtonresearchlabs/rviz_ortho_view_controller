@@ -1,12 +1,18 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0)
 project(rviz_ortho_view_controller)
 
 # Package
-set(CATKIN_DEPENDENCIES pluginlib roscpp rviz)
+set(CATKIN_DEPENDENCIES pluginlib roscpp roslint rviz)
 
 find_package(catkin REQUIRED COMPONENTS ${CATKIN_DEPENDENCIES})
 find_package(Qt5Core)
 find_package(Qt5Gui)
+
+set(
+  ROSLINT_CPP_OPTS
+  "--extensions=cpp,h,hpp" "--filter=-whitespace/braces,-runtime/references"
+)
+roslint_cpp()
 
 catkin_package(INCLUDE_DIRS include
                LIBRARIES ${PROJECT_NAME}

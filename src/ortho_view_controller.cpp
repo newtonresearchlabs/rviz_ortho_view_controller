@@ -1,3 +1,4 @@
+// Copyright 2016 Andrew Short
 #include "rviz_ortho_view_controller/ortho_view_controller.h"
 
 #include <OgreCamera.h>
@@ -229,7 +230,7 @@ void OrthoViewController::onPlaneChanged()
   {
     auto orientation = Ogre::Quaternion::IDENTITY;
 
-    // TODO fix XZ and YZ planes.
+    // TODO(lucasw) fix XZ and YZ planes.
     if (plane == PLANE_XZ)
       orientation.FromAngleAxis(Ogre::Radian(M_PI / 2), Ogre::Vector3::UNIT_X);
     else if (plane == PLANE_YZ)
@@ -243,6 +244,6 @@ OrthoViewController::Plane OrthoViewController::getPlane() const
 {
   return static_cast<Plane>(plane_property_->getOptionInt());
 }
-}
+}  // namespace rviz_ortho_view_controller
 
 PLUGINLIB_EXPORT_CLASS(rviz_ortho_view_controller::OrthoViewController, rviz::ViewController);

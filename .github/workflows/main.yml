@@ -69,5 +69,4 @@ jobs:
       - name: lint
         run: |
           cd ~/catkin_ws
-          echo "not using roslint for now, a lot of work is required to make it pass"
-          # catkin build rviz_ortho_view_controller --no-deps --catkin-make-args roslint
+          catkin build rviz_ortho_view_controller --no-deps --catkin-make-args roslint

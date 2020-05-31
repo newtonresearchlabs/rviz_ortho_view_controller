@@ -1,3 +1,4 @@
+// Copyright 2016 Andrew Short
 #ifndef RVIZ_ORTHO_VIEW_CONTROLLER_ORTHO_VIEW_CONTROLLER_H
 #define RVIZ_ORTHO_VIEW_CONTROLLER_ORTHO_VIEW_CONTROLLER_H
 
@@ -61,6 +62,6 @@ private:
 
   std::unique_ptr<rviz::Shape> centre_shape_;
 };
-}
+}  // namespace rviz_ortho_view_controller
 
-#endif // RVIZ_ORTHO_VIEW_CONTROLLER_ORTHO_VIEW_CONTROLLER_H
+#endif  // RVIZ_ORTHO_VIEW_CONTROLLER_ORTHO_VIEW_CONTROLLER_H
