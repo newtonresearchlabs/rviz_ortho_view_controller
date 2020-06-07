@@ -9,6 +9,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
+  <!-- TODO(lucasw) build_depend and run_depend, update this xml -->
   <depend>pluginlib</depend>
   <depend>roscpp</depend>
   <depend>roslint</depend>
