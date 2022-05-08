@@ -40,7 +40,6 @@ endif()
 
 add_library(${PROJECT_NAME} src/ortho_view_controller.cpp ${MOC_FILES})
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${QT_LIBRARIES})
-set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_FLAGS "-std=c++11")
 
 # Install
 install(DIRECTORY include/${PROJECT_NAME}/
