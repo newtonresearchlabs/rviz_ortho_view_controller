@@ -5,7 +5,7 @@
 #include <OgreSceneNode.h>
 #include <OgreViewport.h>
 
-#include <pluginlib/class_list_macros.h>
+#include <pluginlib/class_list_macros.hpp>
 
 #include <QEvent>
 
