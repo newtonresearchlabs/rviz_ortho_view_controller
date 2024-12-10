@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
 project(rviz_ortho_view_controller)
 
+add_compile_options(-std=c++11)
+
 # Package
 set(CATKIN_DEPENDENCIES pluginlib roscpp roslint rviz)
 
